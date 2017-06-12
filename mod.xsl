@@ -2,9 +2,10 @@
     <xsl:template match="/root" name="wurui.smct-msg">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-smct-msg" ox-mod="smct-msg">
-            <h1>
-                This is mod smct-msg;
-            </h1>
+            <div class="content">
+                <legend>车主留言</legend>
+                <xsl:value-of select="data/text"/>
+            </div>
         </div>
     </xsl:template>
 </xsl:stylesheet>
