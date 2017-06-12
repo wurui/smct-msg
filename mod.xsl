@@ -4,7 +4,7 @@
         <div class="J_OXMod oxmod-smct-msg" ox-mod="smct-msg">
             <xsl:if test="data/text and data/text != ''">
             <div class="content">
-                <legend>车主留言</legend>
+                <label>车主留言</label>
                 <xsl:value-of select="data/text"/>
             </div>
             </xsl:if>
