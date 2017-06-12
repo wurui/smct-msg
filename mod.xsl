@@ -2,10 +2,12 @@
     <xsl:template match="/root" name="wurui.smct-msg">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-smct-msg" ox-mod="smct-msg">
+            <xsl:if test="data/text and data/text != ''">
             <div class="content">
                 <legend>车主留言</legend>
                 <xsl:value-of select="data/text"/>
             </div>
+            </xsl:if>
         </div>
     </xsl:template>
 </xsl:stylesheet>
